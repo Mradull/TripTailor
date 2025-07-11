@@ -24,7 +24,7 @@ const generateItinerary = async (prompt) => {
       headers: {
         "Content-Type": "application/json",
         "Authorization": `Bearer ${import.meta.env.VITE_OPENROUTER_API_KEY}`, // Free anon key
-        "HTTP-Referer": "http://localhost:5173" || "https://trip-tailor-pied.vercel.app/", // or your production URL
+        "HTTP-Referer": "http://localhost:5173" || "https://trip-tailor-pied.vercel.app/", 
         "X-Title": "TripTailor AI"
       },
       body: JSON.stringify({
