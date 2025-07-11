@@ -291,7 +291,7 @@ const copyShareLink = (trip) => {
             </p>
             {!searchTerm && (
               <button
-                onClick={() => navigate("/plan-trip")}
+                onClick={() => navigate("/trip-planner")}
                 className="px-6 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 font-medium transition-colors"
               >
                 Plan Your First Trip
@@ -361,7 +361,7 @@ const copyShareLink = (trip) => {
                         View Details
                       </Link>
                       <button
-                        onClick={() => navigate(`/plan-trip?regenerate=${trip.id}`)}
+                        onClick={() => navigate(`/trip-planner?regenerate=${trip.id}`)}
                         className="flex-1 px-4 py-2 bg-green-600 text-white rounded-lg hover:bg-green-700 transition-colors font-medium"
                       >
                         Regenerate
